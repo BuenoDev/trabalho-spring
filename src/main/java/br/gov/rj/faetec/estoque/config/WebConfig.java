@@ -1,5 +1,6 @@
 package br.gov.rj.faetec.estoque.config;
 
+import br.gov.rj.faetec.estoque.controller.HomeController;
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
@@ -22,6 +23,7 @@ import br.gov.rj.faetec.estoque.controller.ProdutosController;
 @Configuration
 @ComponentScan(basePackageClasses = { ProdutosController.class })
 @ComponentScan(basePackageClasses = { ClienteControler.class })
+@ComponentScan(basePackageClasses = { HomeController.class })
 @EnableWebMvc
 public class WebConfig extends WebMvcConfigurerAdapter implements ApplicationContextAware {
 
